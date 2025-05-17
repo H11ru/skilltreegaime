@@ -4,6 +4,7 @@ A simple incremental game where you earn "Bapploid Points" (BP) and spend them o
 
 ## Project Structure
 
+```
 /my-skill-tree-game/
 ├── index.html // Main HTML shell
 ├── css/
@@ -24,6 +25,7 @@ A simple incremental game where you earn "Bapploid Points" (BP) and spend them o
 │ │ ├── uiManager.js // Handles all DOM manipulation, updates UI elements
 │ │ └── domElements.js // Centralized DOM element references
 └── README.md // This file
+```
 
 ## How to Run
 
