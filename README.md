@@ -1,4 +1,4 @@
-# My Skill Tree Game
+# Skill Tree Ultra Deluxe
 
 A simple incremental game where you earn "Bapploid Points" (BP) and spend them on upgrades that unlock features, visual improvements, and more ways to earn BP. This project is structured to be modular and extensible.
 
@@ -62,7 +62,7 @@ A simple incremental game where you earn "Bapploid Points" (BP) and spend them o
 
 ## Future Enhancements
 
-*   **Save/Load Game:** Implement `saveState` and `loadState` in `js/core/gameState.js` using `localStorage`.
+*   **Save/Load Game:** Implement `saveState` and `loadState` in `js/core/gameState.js` using `localStorage`, and maybe let users download them as files too.
 *   **More Complex Upgrades:** Introduce upgrades with ongoing effects, or upgrades that modify other upgrades.
 *   **Visual Polish:** Add more sophisticated CSS, animations, and potentially images/icons.
 *   **Balancing:** Adjust costs and income rates for better game progression.
