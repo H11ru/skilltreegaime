@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>untitled</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/game-styles.css">
+</head>
+<body>
+    <h1 id="h1upgrade">Skill Tree: This entire game is a skill tree. There is nothing else... for now</h1>
+    <p><strong>BP:</strong> <span id="bpDisplay">0</span></p>
+
+    <div id="upgradesContainer">
+        <h2 id="subheading">Upgrades</h2>
+        <button id="gain1BP">Gain 1 BP (0 BP)</button>
+
+        <div class="factory-controls">
+            <button id="buyFactoryButton">Create Bapploid Factory (1.00 BP)</button>
+            <input type="number" id="bulkAmountInput" value="10" placeholder="Amount" min="1" max="9999999">
+            <button id="bulkBuyButton">Buy 10x Factories (0.00 BP)</button>
+        </div>
+
+        <button id="changeTitleButton">Window title (1.50 BP)</button>
+        <button id="purchaseCSSButton">Purchase CSS (10.00 BP)</button>
+        <button id="buyCounterButton">Purchase Factory Counter (3.00 BP)</button>
+        <button id="purchaseH1Button">Purchase Headings (2.00 BP)</button>
+        <button id="darkModeButton">Dark Mode (5.00 BP)</button>
+        <button id="bulkPurchaserButton">Purchase Bulk Buy (50.00 BP)</button>
+    </div>
+
+    <p id="factoryCountDisplay">Bapploid Factories: 0</p>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

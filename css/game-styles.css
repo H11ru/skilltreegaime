@@ -1,0 +1,81 @@
+/* css/game-styles.css */
+
+/* These styles are applied when body has the 'has-css' class */
+body.has-css {
+    padding: 20px;
+    background: var(--bg-color, white); /* Default to white if var not set */
+    color: var(--text-color, black);   /* Default to black if var not set */
+    transition: background 0.3s, color 0.3s;
+}
+
+.has-css #upgradesContainer {
+    gap: 10px; /* More spacious gap */
+    padding: 10px;
+    outline: 1px solid #ccc;
+    width: 270px; /* Match original when CSS is on */
+}
+
+.has-css button {
+    padding: 8px 16px;
+    margin: 5px 0; /* Vertical margin primarily */
+    border-radius: 4px;
+    border: 1px solid #bbb; /* Slightly darker border */
+    background-color: #f9f9f9;
+    width: 100%; /* Make buttons take full width of their container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.has-css .factory-controls {
+    width: 100%; /* Controls take full width of upgrades container */
+}
+
+.has-css .factory-controls button,
+.has-css .factory-controls input {
+    width: 100%; /* Ensure they fill the .factory-controls width */
+    box-sizing: border-box;
+}
+
+
+.has-css button:hover:not(:disabled) {
+    background-color: #e0e0e0;
+}
+
+.has-css button:disabled,
+.has-css button[disabled] { /* Ensure both selectors get styled */
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #ccc;
+}
+
+/* Specific styling for bulk buy to appear connected */
+.has-css .bulk-input { /* Apply to bulkAmountInput via class if needed, or ID */
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    margin-bottom: 0; /* Remove bottom margin to connect with button below */
+    border-bottom: none;
+}
+#bulkAmountInput.has-css { /* More specific for the input when CSS is on */
+     border-radius: 4px 4px 0 0;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+
+.has-css #bulkBuyButton {
+    margin-top: 0; /* Remove top margin */
+    border-radius: 0 0 4px 4px;
+    /* border-top: none; Input will have bottom border removed, so this is fine */
+}
+
+/* Ensure these are block or flex as appropriate when CSS is active and they are shown */
+.has-css #h1upgrade,
+.has-css #subheading,
+.has-css #factoryCountDisplay {
+    /* display property will be controlled by JS (showElement/hideElement) */
+}
+
+.has-css #darkModeButton {
+    /* display property controlled by JS */
+}
